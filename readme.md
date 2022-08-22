@@ -1,1 +1,3 @@
-** This is a testfile
+** About
+
+Winecellar app based on Cakephp

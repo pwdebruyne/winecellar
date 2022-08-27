@@ -1,0 +1,36 @@
+<?php
+/**
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Wine $wine
+ * @var string[]|\Cake\Collection\CollectionInterface $wineries
+ * @var string[]|\Cake\Collection\CollectionInterface $styles
+ */
+?>
+<div class="row">
+    <aside class="column">
+        <div class="side-nav">
+            <h4 class="heading"><?= __('Actions') ?></h4>
+            <?= $this->Form->postLink(
+                __('Delete'),
+                ['action' => 'delete', $wine->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $wine->id), 'class' => 'side-nav-item']
+            ) ?>
+            <?= $this->Html->link(__('List Wines'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+        </div>
+    </aside>
+    <div class="column-responsive column-80">
+        <div class="wines form content">
+            <?= $this->Form->create($wine) ?>
+            <fieldset>
+                <legend><?= __('Edit Wine') ?></legend>
+                <?php
+                    echo $this->Form->control('name');
+                    echo $this->Form->control('winery_id', ['options' => $wineries]);
+                    echo $this->Form->control('style_id', ['options' => $styles]);
+                ?>
+            </fieldset>
+            <?= $this->Form->button(__('Submit')) ?>
+            <?= $this->Form->end() ?>
+        </div>
+    </div>
+</div>

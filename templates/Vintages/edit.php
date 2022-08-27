@@ -1,0 +1,43 @@
+<?php
+/**
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Vintage $vintage
+ * @var string[]|\Cake\Collection\CollectionInterface $wines
+ * @var string[]|\Cake\Collection\CollectionInterface $classifications
+ * @var string[]|\Cake\Collection\CollectionInterface $locations
+ */
+?>
+<div class="row">
+    <aside class="column">
+        <div class="side-nav">
+            <h4 class="heading"><?= __('Actions') ?></h4>
+            <?= $this->Form->postLink(
+                __('Delete'),
+                ['action' => 'delete', $vintage->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $vintage->id), 'class' => 'side-nav-item']
+            ) ?>
+            <?= $this->Html->link(__('List Vintages'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+        </div>
+    </aside>
+    <div class="column-responsive column-80">
+        <div class="vintages form content">
+            <?= $this->Form->create($vintage) ?>
+            <fieldset>
+                <legend><?= __('Edit Vintage') ?></legend>
+                <?php
+                    echo $this->Form->control('wine_id', ['options' => $wines]);
+                    echo $this->Form->control('year');
+                    echo $this->Form->control('classification_id', ['options' => $classifications, 'empty' => true]);
+                    echo $this->Form->control('stock');
+                    echo $this->Form->control('price');
+                    echo $this->Form->control('value');
+                    echo $this->Form->control('min_age');
+                    echo $this->Form->control('max_age');
+                    echo $this->Form->control('location_id', ['options' => $locations, 'empty' => true]);
+                ?>
+            </fieldset>
+            <?= $this->Form->button(__('Submit')) ?>
+            <?= $this->Form->end() ?>
+        </div>
+    </div>
+</div>

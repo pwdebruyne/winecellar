@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '4.4.1',
-        'version' => '4.4.1.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c6e88f6faf9b88d0d9e91941871d88cd6be28072',
         'name' => 'cakephp/app',
         'dev' => true,
     ),
@@ -20,12 +20,12 @@
             'dev_requirement' => true,
         ),
         'cakephp/app' => array(
-            'pretty_version' => '4.4.1',
-            'version' => '4.4.1.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c6e88f6faf9b88d0d9e91941871d88cd6be28072',
             'dev_requirement' => false,
         ),
         'cakephp/bake' => array(
@@ -317,12 +317,12 @@
             'dev_requirement' => true,
         ),
         'laminas/laminas-diactoros' => array(
-            'pretty_version' => '2.14.0',
-            'version' => '2.14.0.0',
+            'pretty_version' => '2.15.0',
+            'version' => '2.15.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../laminas/laminas-diactoros',
             'aliases' => array(),
-            'reference' => '6cb35f61913f06b2c91075db00f67cfd78869e28',
+            'reference' => 'de9cd9cd56f51d24bd6eeaf9012ac04b2be4d587',
             'dev_requirement' => false,
         ),
         'laminas/laminas-httphandlerrunner' => array(
@@ -779,12 +779,12 @@
             'dev_requirement' => false,
         ),
         'symfony/console' => array(
-            'pretty_version' => 'v6.1.3',
-            'version' => '6.1.3.0',
+            'pretty_version' => 'v6.1.4',
+            'version' => '6.1.4.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/console',
             'aliases' => array(),
-            'reference' => '43fcb5c5966b43c56bcfa481368d90d748936ab8',
+            'reference' => '7fccea8728aa2d431a6725b02b3ce759049fc84d',
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
@@ -797,12 +797,12 @@
             'dev_requirement' => false,
         ),
         'symfony/filesystem' => array(
-            'pretty_version' => 'v6.1.3',
-            'version' => '6.1.3.0',
+            'pretty_version' => 'v6.1.4',
+            'version' => '6.1.4.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/filesystem',
             'aliases' => array(),
-            'reference' => 'c780e677cddda78417fa5187a7c6cd2f21110db9',
+            'reference' => '3f39c04d2630c34019907b02f85672dac99f8659',
             'dev_requirement' => false,
         ),
         'symfony/finder' => array(
@@ -887,12 +887,12 @@
             'dev_requirement' => false,
         ),
         'symfony/string' => array(
-            'pretty_version' => 'v6.1.3',
-            'version' => '6.1.3.0',
+            'pretty_version' => 'v6.1.4',
+            'version' => '6.1.4.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
-            'reference' => 'f35241f45c30bcd9046af2bb200a7086f70e1d6b',
+            'reference' => '290972cad7b364e3befaa74ba0ec729800fb161c',
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
@@ -903,6 +903,15 @@
             'aliases' => array(),
             'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
             'dev_requirement' => true,
+        ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => '5.2.0',
+            'version' => '5.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'reference' => 'edf9c40956d19e6ab3f9151bfe0dfac6be06fa21',
+            'dev_requirement' => false,
         ),
         'twig/markdown-extra' => array(
             'pretty_version' => 'v3.4.0',
@@ -921,6 +930,12 @@
             'aliases' => array(),
             'reference' => 'e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077',
             'dev_requirement' => true,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '5.2.0',
+            ),
         ),
     ),
 );
